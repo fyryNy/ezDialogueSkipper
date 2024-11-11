@@ -52,6 +52,11 @@ namespace GOTHIC_ENGINE {
             continue;
           }
 
+          if (msgConv->name.StartWith("CALL "))
+          {
+            continue;
+          }
+
           if (msgConv->subType == oCMsgConversation::EV_OUTPUT || msgConv->subType == oCMsgConversation::EV_OUTPUTSVM || msgConv->subType == oCMsgConversation::EV_OUTPUTSVM_OVERLAY || msgConv->subType == oCMsgConversation::EV_PLAYANI_NOOVERLAY)
           {
             msgConv->Delete();
