@@ -73,7 +73,7 @@ namespace GOTHIC_ENGINE {
   }
 
   void Game_Init() {
-    skipHotkey = GetKey(zoptions->ReadString("ezDialogueSkipper", "HotKey", "KEY_RSHIFT"));
+    skipHotkey = GetKey(zoptions->ReadString("ezDialogueSkipper", "HotKey", "KEY_LSHIFT"));
   }
 
   void Game_Exit() {
